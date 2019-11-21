@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Image.css'
 
 const images = require.context('../images', true);
@@ -6,10 +6,23 @@ const images = require.context('../images', true);
 const imageNames = ['carrot', 'dragonfruit', 'ube'];
 
 const Image = () => {
-  var imgName = imageNames[getRandomInt(imageNames.length)]
-  let imageSrc = images(`./${imgName}.jpg`);
+  const [imageSrc, setImageSrc] = useState(getDefaultImage());
+
+  function getDefaultImage() {
+    var imgName = imageNames[getRandomInt(imageNames.length)]
+    var image =  images(`./${imgName}.jpg`)
+    return image;
+  }
+
+  function setImage() {
+    var imgName = imageNames[getRandomInt(imageNames.length)]
+    var image =  images(`./${imgName}.jpg`)
+    if(image !== imageSrc) setImageSrc(image);
+    else setImage();
+  }
+  
   return (
-      <img className="img" src={imageSrc} alt=""></img>
+      <img onClick={()=>setImage()} className="img" src={imageSrc} alt=""></img>
   )
 }
 

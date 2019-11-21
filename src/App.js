@@ -22,15 +22,15 @@ const App = () => {
 const BaseLayout = () => (
   <div className="base">
     <header>
-        <nav>
-          <ul className="nav">
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About</Link></li>
-            <li><Link to='/paintings'>Paintings</Link></li>
-            <li><Link to='/illustrations'>Illustrations</Link></li>
-            <li><Link to='/contact'>Contact</Link></li>
-          </ul>
-        </nav>
+      <nav>
+        <ul className="nav">
+          <li><Link className="link" to='/'>HOME</Link></li>
+          <li><Link className="link" to='/about'>ABOUT</Link></li>
+          <li><Link className="link" to='/paintings'>PAINTINGS</Link></li>
+          <li><Link className="link" to='/illustrations'>ILLUSTRATIONS</Link></li>
+          <li><Link className="link" to='/contact'>CONTACT</Link></li>
+        </ul>
+      </nav>
     </header>
     <div className="container">
       <Route path="/" exact component={Home} />

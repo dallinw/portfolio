@@ -8,6 +8,8 @@ return (
     <div className="App">
       <Name />
       <Image className="img"/>
+      <Image className="img"/>
+      <Image className="img"/>
     </div>
   )
 }
