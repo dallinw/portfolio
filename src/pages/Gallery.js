@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import Back from '../images/back.png';
 import Forward from '../images/forward.png';
-import './Paintings.css';
+import './Gallery.css';
 
 const imageContext = require.context('../images', true);
 const NUM_COLUMNS = 3;
 
-const Paintings = () => {
+const Gallery = () => {
   const images = ['bitter', 'eggplant', 'calamansi', 'dragonfruit', 'carrot', 'chili', 'ube', 'papaya'];
   let [bigImgIndex, setBigImgIndex] = useState(0);
   
@@ -19,7 +19,7 @@ const Paintings = () => {
 
   function selectImage(index){
     setBigImgIndex(index);
-    window.scroll({top: 150, left: 0, behavior: 'smooth' })
+    window.scroll({top: 0, left: 0, behavior: 'smooth' })
   }
 
   const ImageColumn = ({modVal}) => {
@@ -56,4 +56,4 @@ function getImgSrc(str) {
   return imageContext(`./${str}.jpg`)
 }
 
-export default Paintings;
+export default Gallery;
