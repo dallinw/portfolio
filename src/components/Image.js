@@ -3,7 +3,7 @@ import './Image.css'
 
 const images = require.context('../images', true);
 
-const imageNames = ['carrot', 'dragonfruit', 'ube'];
+const imageNames = ['carrot', 'dragonfruit', 'ube', 'bitter', 'eggplant', 'chili', 'papaya'];
 
 const Image = () => {
   const [imageSrc, setImageSrc] = useState(getDefaultImage());
