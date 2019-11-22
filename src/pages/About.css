@@ -1,0 +1,13 @@
+.about {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.para {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 200; 
+    background-color: white;
+    color: #414141;
+}

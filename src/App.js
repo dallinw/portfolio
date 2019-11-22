@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter} from 'react-router-dom'
 import { Route } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -20,15 +20,15 @@ const App = () => {
 }
 
 const BaseLayout = () => (
-  <div className="base">
+  <div className = "app">
     <header>
       <nav>
         <ul className="nav">
-          <li><Link className="link" to='/'>HOME</Link></li>
-          <li><Link className="link" to='/about'>ABOUT</Link></li>
-          <li><Link className="link" to='/paintings'>PAINTINGS</Link></li>
-          <li><Link className="link" to='/illustrations'>ILLUSTRATIONS</Link></li>
-          <li><Link className="link" to='/contact'>CONTACT</Link></li>
+          <li><NavLink activeClassName="active" className="link" exact to='/'>HOME</NavLink></li>
+          <li><NavLink activeClassName="active" className="link" to='/about'>ABOUT</NavLink></li>
+          <li><NavLink activeClassName="active" className="link" to='/paintings'>PAINTINGS</NavLink></li>
+          <li><NavLink activeClassName="active" className="link" to='/illustrations'>ILLUSTRATIONS</NavLink></li>
+          <li><NavLink activeClassName="active" className="link" to='/contact'>CONTACT</NavLink></li>
         </ul>
       </nav>
     </header>
