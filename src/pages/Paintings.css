@@ -1,0 +1,60 @@
+.imgParent {
+  display:flex;
+  flex-direction:row;
+  max-width:85%;
+  height: auto;
+  justify-content:center;
+  margin: auto;
+  align-content: center;
+}
+
+.mainImg {
+  max-width:100%;
+}
+
+.smallIcon {
+  width:10px;
+}
+
+.hiddenButton {
+  opacity:0%;
+  align-items:center;
+  transition: opacity 0.25s;
+}
+
+.hiddenButton:hover {
+  opacity:100%;
+}
+
+.scrollButton {
+  border: 0px;
+  background-color:#e8e8e8;
+  color: darkgray;
+  font-size:48px;
+  height:100%;
+  outline: none;
+}
+
+.parent {
+  display:flex;
+  flex-direction:row;
+  max-width:90%;
+  height: auto;
+  justify-content:center;
+  margin-top:100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexCol {
+  max-width:33%;
+}
+
+.colImg {
+  max-width:98%;
+  margin-bottom:1%;
+}
+.colImg:hover {
+  opacity: 92%;
+}
+

@@ -35,8 +35,8 @@ const BaseLayout = () => (
     <div className="container">
       <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
-      <Route path="paintings" component={Paintings} />
-      <Route path="illustrations" component={Illustrations} />
+      <Route path="/paintings" component={Paintings} />
+      <Route path="/illustrations" component={Illustrations} />
       <Route path="/contact" component={Contact} />
     </div>
   </div>

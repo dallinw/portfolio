@@ -1,0 +1,20 @@
+.parent {
+  display:flex;
+  flex-direction:row;
+  max-width:1230px;
+  height: auto;
+  justify-content:center;
+  margin: auto;
+}
+
+.flexCol {
+  max-width:33%;
+}
+
+.colImg {
+  max-width:400px;
+  margin-bottom:4px;
+}
+.colImg:hover {
+  opacity: 92%;
+}
