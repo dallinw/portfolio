@@ -38,8 +38,3 @@
 .link:hover {
   opacity:60%;
 }
-
-.base {
-  opacity: 100%;
-  transition: opacity 0.5s;
-}
