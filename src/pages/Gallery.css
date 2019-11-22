@@ -1,15 +1,15 @@
 .imgParent {
   display:flex;
-  flex-direction:row;
-  max-height:10%;
-  height: auto;
+  max-width:85%;
+  height: 80vh;
   justify-content:center;
   margin: auto;
   align-content: center;
 }
 
 .mainImg {
-  height:600px;
+  max-height:100%;
+  max-width:100%;
 }
 
 .smallIcon {
