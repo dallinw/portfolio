@@ -1,7 +1,7 @@
 .imgParent {
   display:flex;
-  max-width:85%;
-  height: 75vh;
+  max-width:75vw;
+  max-height:80vw;
   justify-content:center;
   margin: auto;
   align-content: center;

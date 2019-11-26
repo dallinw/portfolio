@@ -19,14 +19,14 @@ const Gallery = () => {
 
   function selectImage(index){
     setBigImgIndex(index);
-    window.scroll({top: 0, left: 0, behavior: 'smooth' })
+    window.scroll({top: 150, left: 0, behavior: 'smooth' })
   }
 
   const ImageColumn = ({modVal}) => {
     return(
       <div className="flexCol">
         {images.map((value, index) => {
-          return(index % NUM_COLUMNS === modVal) ? <img className="colImg" src={getImgSrc(value)} listId={index} key={index} onClick={()=>{selectImage(index)}} alt=""/>
+          return(index % NUM_COLUMNS === modVal) ? <img className="colImg" src={getImgSrc(value)} listid={index} key={index} onClick={()=>{selectImage(index)}} alt=""/>
           : null
         })}
       </div>

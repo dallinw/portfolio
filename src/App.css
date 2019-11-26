@@ -1,5 +1,11 @@
 .app {
   width:100%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden; 
 }
 
 .nav {
@@ -22,4 +28,9 @@
 
 .active {
   font-weight: bold;
+}
+
+.app.show {
+  opacity: 1;
+  visibility: visible; 
 }

@@ -5,7 +5,7 @@ const PrintoutCard = ({heading, image}) => {
     return (
         <div className="card">
           <h1 className="cardHeading">{heading}</h1>
-          <img className="cardImg" src={image} />
+          <img className="cardImg" src={image} alt=""/>
         </div>
     )
 }
