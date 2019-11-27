@@ -4,8 +4,10 @@
   "private": true,
   "homepage": "http://dallinw.github.io/portfolio",
   "dependencies": {
+    "list-react-files": "^0.2.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-pdf": "^4.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },

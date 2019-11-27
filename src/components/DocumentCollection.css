@@ -1,0 +1,36 @@
+.pdfParent {
+  display:flex;
+  flex-direction:row;
+  max-width:90%;
+  height: auto;
+  justify-content:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  opacity:0%;
+}
+
+.reveal {
+  opacity:100%;
+  transition: opacity 1s;
+}
+
+.pdfCard{
+  display:inline-block;
+}
+
+.blankButton {
+  background-color:white;
+  border:none;
+  outline:none;
+}
+
+.pdfLabel{
+  display:block;
+  color: black;
+  font-size: 10px;
+  text-transform:uppercase;
+  font-weight: 300;
+}

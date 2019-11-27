@@ -4,7 +4,7 @@ import Name from '../components/Name'
 import './Home.css'
 
 const Home = () => {
-const [show, setShow] = useState(true)
+const [show] = useState(true)
 const componentClasses = ['home'];
 if (show) { componentClasses.push('show'); }
 return (

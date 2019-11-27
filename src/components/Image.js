@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Image.css'
 
-const images = require.context('../images', true);
+const images = require.context('../assets/images', true);
 
 const imageNames = ['carrot', 'dragonfruit', 'ube', 'bitter', 'eggplant', 'chili', 'papaya'];
 

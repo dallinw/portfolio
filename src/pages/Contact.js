@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
 import './Contact.css';
 
+/****************************************************
+ * Constants
+ ****************************************************/
+
 const INVALID_EMAIL = "PLEASE ENTER A VALID EMAIL";
 const INVALID_NAME = "PLEASE ENTER A VALID NAME";
 const INVALID_NAME_AND_EMAIL = "PLEASE ENTER A VALID NAME AND EMAIL";
@@ -9,9 +13,13 @@ const EMAIL_SENDING = "SENDING EMAIL...";
 const EMAIL_SENT = "THANKS FOR REACHING OUT! I'LL BE IN TOUCH WITH YOU SOON.";
 const EMAIL_DOWN = "SORRY, IT LOOKS LIKE THE EMAIL SERVER IS DOWN. PLEASE TRY AGAIN LATER!"
 const TEMPLATE_ID = 'template_hbEERvyT';
+const toName = "Mikki"
 
 
 const Contact= () => {
+/****************************************************
+ * State
+ ****************************************************/
   const [feedback, setFeedback] = useState("");
   const [fromName, setFromName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,7 +27,9 @@ const Contact= () => {
   const [msg, setMsg] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const toName = "Mikki";
+  /****************************************************
+  * Event Handlers
+  ***************************************************/
 
   function handleSubmit(event) {
     setToast(true);
@@ -64,6 +74,9 @@ const Contact= () => {
   function handleNameChange(event) { setFromName(event.target.value); }
   function handleEmailChange(event) { setEmail(event.target.value); }
 
+  /****************************************************
+  * Render
+  ****************************************************/
   return (
     <div className="contact-card">
     { success ? null : 

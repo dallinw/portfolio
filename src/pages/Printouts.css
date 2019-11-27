@@ -3,3 +3,12 @@
     text-align: center;
     margin:auto;
 }
+
+.blankButton {
+    background-color:white;
+    border:none;
+    outline:none;
+}
+.blankButton .select {
+ font-weight:bold;
+}
