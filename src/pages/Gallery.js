@@ -9,9 +9,9 @@ import './Gallery.css';
  *************************************************/
 
 const NUM_COLUMNS = 3;
-const illustrations = ['bitter.jpg'];
+const illustrations = ['bear.png', 'girls.png', 'house.png', 'memory.png', 'tongue.png'];
 const paintings = ['jame.jpg'];
-const prints = ['restaurant.png', 'housesgirls.png', 'ube.jpg'];
+const prints = ['restaurant.png', 'housesgirls.png'];
 const misc = ['jumping.jpg', 'laughing.jpg', 'problem.jpg', 'colorfulgirls.jpg']
 const all = shuffle(illustrations.concat(paintings.concat(prints.concat(misc))));
 const fileNames = { 'illustrations': illustrations, 'paintings': paintings, 'prints': prints, 'all': all }
@@ -99,7 +99,7 @@ const Gallery = () => {
         <button className={buttonClasses["paintings"]} onClick={() => {changeCollection("paintings")}}>paintings</button>
         <button className={buttonClasses["prints"]} onClick={() => {changeCollection("prints")}}>prints</button>
       </div>
-      <div className="imgParent">
+      <div className={imgParentClassName}>
       {(isMobile) ? null : 
         <div className="hiddenButton" onClick={() => {scrollImage("backward")}}>
           <button className="scrollButton"><img className="smallIcon" src={Back} alt="back"/></button>

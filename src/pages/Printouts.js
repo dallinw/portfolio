@@ -14,6 +14,7 @@ const Printouts = () => {
   {
     setShow(false, setCollection(coll));
     setTimeout(()=>{setShow(true)}, 500);
+    setTimeout(()=>{window.scrollTo({top: document.body.scrollHeight, behavior:'smooth'})}, 600);
   }
 
   return (

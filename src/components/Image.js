@@ -3,7 +3,7 @@ import './Image.css'
 
 const images = require.context('../assets/images', true);
 
-const imageNames = ['ube.jpg', 'bitter.jpg', 'jumping.jpg', 'laughing.jpg', 'problem.jpg', 'colorfulgirls.jpg'];
+const imageNames = ['jumping.jpg', 'laughing.jpg', 'problem.jpg', 'colorfulgirls.jpg', 'house.png'];
 
 const Image = () => {
   const [imageSrc, setImageSrc] = useState(getDefaultImage());

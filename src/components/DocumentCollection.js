@@ -6,7 +6,7 @@ import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const fileNames = {
-  'coloring': ['coloring', 'coloring1', 'coloring2'],
+  'coloring': ['memory', 'girls', 'house', 'bear', 'tongue'],
   'puzzles': ['puzzle', 'puzzle1', 'puzzle2', 'puzzle3', 'puzzle4', 'puzzle5'],
   'searches': ['search1', 'search2', 'search3']
 }
