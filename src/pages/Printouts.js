@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import PrintoutCard from '../components/PrintoutCard';
 import DocumentCollection from '../components/DocumentCollection';
-import Papaya from '../assets/images/papaya.jpg'
-import Dragonfruit from '../assets/images/carrot.jpg'
-import Eggplant from '../assets/images/chili.jpg'
+import Papaya from '../assets/images/housesgirls.png'
+import Search from '../assets/images/search.png'
+import Eggplant from '../assets/images/restaurant.png'
 import './Printouts.css'
 
 const Printouts = () => {
@@ -22,7 +22,7 @@ const Printouts = () => {
             <PrintoutCard heading="Puzzles" image={Papaya}/>
           </button>
           <button className="blankButton" onClick={()=>updateCollection("searches")}>
-            <PrintoutCard heading="Searches" image={Dragonfruit}/>
+            <PrintoutCard heading="Searches" image={Search}/>
           </button>
           <button className="blankButton" onClick={()=>updateCollection("coloring")}>
             <PrintoutCard heading="Coloring Pages" image={Eggplant}/>

@@ -8,7 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const fileNames = {
   'coloring': ['coloring', 'coloring1', 'coloring2'],
   'puzzles': ['puzzle', 'puzzle1', 'puzzle2', 'puzzle3', 'puzzle4', 'puzzle5'],
-  'searches': ['search', 'search1', 'search2', 'search3', 'search4']
+  'searches': ['search1', 'search2', 'search3']
 }
 const context = require.context('../assets/pdfs', true);
 
@@ -19,7 +19,6 @@ const DocumentCollection = ({collection, show}) => {
   useEffect(()=>{
     if(show) setShowClassName("reveal");
     else setShowClassName("hidden");
-    console.log('toggle className' + show);
   },[show])
 
   if(collection === "default") return null;

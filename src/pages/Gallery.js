@@ -8,10 +8,11 @@ import './Gallery.css';
  *************************************************/
 
 const NUM_COLUMNS = 3;
-const illustrations = ['bitter', 'calamansi', 'carrot', 'chili'];
-const paintings = ['dragonfruit'];
-const prints = ['eggplant', 'papaya', 'ube'];
-const all = shuffle(illustrations.concat(paintings.concat(prints)));
+const illustrations = ['bitter.jpg'];
+const paintings = ['jame.jpg'];
+const prints = ['restaurant.png', 'housesgirls.png', 'ube.jpg'];
+const misc = ['jumping.jpg', 'laughing.jpg', 'problem.jpg', 'colorfulgirls.jpg']
+const all = shuffle(illustrations.concat(paintings.concat(prints.concat(misc))));
 const fileNames = { 'illustrations': illustrations, 'paintings': paintings, 'prints': prints, 'all': all }
 const BASE_CLASSNAME = "collectionButton";
 const BOLD_CLASSNAME = "collectionButton bold";
@@ -30,7 +31,7 @@ const Gallery = () => {
   {
     let paths = [];
     collectionNames.forEach(name => {
-      let image = context(`./${name}.jpg`)
+      let image = context(`./${name}`)
       paths.push(image)
     })
     return paths;

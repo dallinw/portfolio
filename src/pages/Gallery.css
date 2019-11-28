@@ -1,7 +1,6 @@
 .imgParent {
   display:flex;
-  max-width:75vw;
-  max-height:80vw;
+  height:90vh;
   justify-content:center;
   margin: auto;
   align-content: center;
