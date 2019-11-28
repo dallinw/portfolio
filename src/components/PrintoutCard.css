@@ -2,9 +2,16 @@
     width:300px;
     height:300px;
     display:inline-block;
+    max-width:90vw;
+    max-height:90vw;
     margin: 10px;
     padding:10px;
     text-align:center;
+}
+
+.card.mobile{
+    margin:0px;
+    padding:0px;
 }
 
 .card:hover {

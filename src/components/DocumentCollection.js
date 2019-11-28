@@ -36,6 +36,12 @@ const DocumentCollection = ({collection, show}) => {
     return paths;
   }
 
+  function getWidth()
+  {
+    const pageWidth = window.innerWidth;
+    return (pageWidth > 400) ? 400 : pageWidth-50;
+  }
+
   if(collection === "default") return null;
   return (
     <div className={showClassName}>
@@ -44,7 +50,7 @@ const DocumentCollection = ({collection, show}) => {
           <a className="blankButton" href={path} target="_blank" key={index}>
           <div className="pdfCard" key={index}>
             <Document className="previewDoc" file={path} key={index} loading="">
-              <Page className="previewPage" pageNumber={1} loading="" key={index} width={400}/>
+              <Page className="previewPage" pageNumber={1} loading="" key={index} width={getWidth()}/>
             </Document>
             <p className="pdfLabel">{collectionNames[index]}</p>
           </div>

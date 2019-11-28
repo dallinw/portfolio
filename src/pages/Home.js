@@ -10,9 +10,11 @@ if (show) { componentClasses.push('show'); }
 return (
     <div className={componentClasses.join(' ')}>
       <Name />
-      <Image className="img"/>
-      <Image className="img"/>
-      <Image className="img"/>
+      <div className="imagesContainer">
+          <Image className="img"/>
+          <Image className="img"/>
+          <Image className="img"/>
+      </div>
     </div>
   )
 }

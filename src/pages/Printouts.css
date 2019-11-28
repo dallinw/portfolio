@@ -1,7 +1,8 @@
 .printouts {
-    width:80%;
-    text-align: center;
-    margin:auto;
+    max-width:90vw;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
 }
 
 .blankButton {
@@ -9,6 +10,7 @@
     border:none;
     outline:none;
 }
+
 .blankButton .select {
  font-weight:bold;
 }

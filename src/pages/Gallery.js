@@ -1,6 +1,7 @@
 import React, {useState, useRef} from 'react';
 import Back from '../assets/images/icons/back.png';
 import Forward from '../assets/images/icons/forward.png';
+import { useMediaQuery } from 'react-responsive'
 import './Gallery.css';
 
 /**************************************************
@@ -16,6 +17,10 @@ const all = shuffle(illustrations.concat(paintings.concat(prints.concat(misc))))
 const fileNames = { 'illustrations': illustrations, 'paintings': paintings, 'prints': prints, 'all': all }
 const BASE_CLASSNAME = "collectionButton";
 const BOLD_CLASSNAME = "collectionButton bold";
+const STD_BTN_CLASSNAME = "buttonBar";
+const MOB_BTN_CLASSNAME = "buttonBarMobile";
+const STD_IMG_CLASSNAME = "imgContainer";
+const MOB_IMG_CLASSNAME = "imgContainerMobile";
 const buttonClasses = { all: BOLD_CLASSNAME, illustrations: BASE_CLASSNAME, paintings: BASE_CLASSNAME, prints: BASE_CLASSNAME }
 const context = require.context('../assets/images', true);
 
@@ -26,6 +31,8 @@ const Gallery = () => {
 
   let collectionNames = fileNames[collection];
   let images = getImages();
+  let buttonBarClassName = STD_BTN_CLASSNAME;
+  let imgParentClassName = STD_IMG_CLASSNAME;
 
   function getImages()
   {
@@ -77,22 +84,30 @@ const Gallery = () => {
     )
   }
 
+  const isMobile = useMediaQuery({ query: '(max-width: 550px)' })
+  if(isMobile)
+  {
+    buttonBarClassName=MOB_BTN_CLASSNAME;
+    imgParentClassName=MOB_IMG_CLASSNAME;
+  }
+
   return (
-    <div>
-      <div className="buttonBar">
+    <div className="gallery">
+      <div className={buttonBarClassName}>
         <button className={buttonClasses["all"]} onClick={() => {changeCollection("all")}}>all</button>
         <button className={buttonClasses["illustrations"]} onClick={() => {changeCollection("illustrations")}}>illustrations</button>
         <button className={buttonClasses["paintings"]} onClick={() => {changeCollection("paintings")}}>paintings</button>
         <button className={buttonClasses["prints"]} onClick={() => {changeCollection("prints")}}>prints</button>
       </div>
       <div className="imgParent">
+      {(isMobile) ? null : 
         <div className="hiddenButton" onClick={() => {scrollImage("backward")}}>
           <button className="scrollButton"><img className="smallIcon" src={Back} alt="back"/></button>
-        </div>
+        </div>}
         <img onClick={() => {scrollImage("forward")}} ref={imageRef} className="mainImg" src={images[bigImgIndex]} alt=""/>
-        <div className="hiddenButton" onClick={() => {scrollImage("forward")}}>
+      {(isMobile) ? null: <div className="hiddenButton" onClick={() => {scrollImage("forward")}}>
           <button className="scrollButton"><img className="smallIcon" src={Forward} alt="forward"/></button>
-        </div>
+        </div>}
       </div>
       <div className="parent">
         <ImageColumn modVal={0} />
