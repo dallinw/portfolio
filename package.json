@@ -2,12 +2,8 @@
   "name": "demo",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "npm": "6.9.0",
-    "node": "12.3.1"
-  },
+  "homepage": "http://dallinw.github.io/portfolio",
   "dependencies": {
-    "list-react-files": "^0.2.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-pdf": "^4.1.0",
@@ -20,15 +16,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
     "production": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
     "development": [
       "last 1 chrome version",

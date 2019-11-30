@@ -2,73 +2,6 @@
   width:100vw;
 }
 
-.imgParent {
-  display:flex;
-  width: 80vw;
-  height: 90vh;
-  margin: auto;
-  align-content: center;
-}
-.imgParentMobile {
-  width: 80vw;
-  height: 90vh;
-  margin: auto;
-  margin-bottom:200px;
-  align-content: center;
-}
-
-.mainImg {
-  height: auto;
-  max-width:80%;
-  display:block;
-  object-fit:contain;
-}
-
-.mainImgMobile {
-  height: auto;
-  max-width: 100%;
-  display:block;
-  object-fit:contain;
-}
-
-.smallIcon {
-  width:20px;
-  height:20px;
-  position:absolute;
-  bottom:25vh;
-}
-
-.scrollArea {
-  min-width:100px;
-  width:100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.hiddenButton {
-  width: 100%;
-  height: 100%;
-  opacity:0%;
-  transition: opacity 0.25s;
-}
-
-.showButton{
-  width: 100%;
-  height:100%;
-  opacity:100%;
-}
-
-.scrollButton {
-  border: 0px;
-  background-color:white;
-  color: lightgray;
-  font-size:48px;
-  height:100%;
-  outline: none;
-  width:100%;
-  margin-top: auto;
-}
-
 .parent {
   display:flex;
   flex-direction:row;
@@ -128,26 +61,3 @@
 .collectionButton.bold {
   font-weight:bold;
 }
-
-.info {
-  margin-top:20px;
-  margin-left:auto;
-  margin-right:auto;
-  min-width:150px;
-  width: 90%;
-  text-align:center;
-}
-
-.title {
-  font-weight: 400;
-  padding-left: 3%;
-  padding-top:3%;
-  margin: 0px;
-  font-size: 24px;
-}
-.year {
-  font-weight: 300;
-  padding-left: 2%;
-  padding-bottom: 2%;
-}
-
