@@ -70,10 +70,7 @@ const Gallery = () => {
       <div className="flexCol">
         {images.map((value, index) => {
           return(index % NUM_COLUMNS === modVal) ? 
-          <div className="colImgContainer" onClick={()=>{selectImage(index)}} key={index}>
-            <img className="colImg" src={value} listid={index} alt=""/>
-            <div className="overlay" />
-          </div>
+            <img className="colImg" src={value} listid={index} onClick={()=>{selectImage(index)}} key={index} alt={imageData[index].title}/>
           : null
         })}
       </div>

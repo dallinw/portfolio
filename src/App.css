@@ -4,13 +4,13 @@
   -moz-transition: 0.75s;
   -o-transition: 0.75s;
   transition: 0.75s;
-  opacity: 0;
+  opacity: 0.1;
   visibility: hidden; 
   padding-bottom:150px;
 }
 
 .app.show {
-  opacity: 100%;
+  opacity: 1;
   visibility: visible; 
 }
 
@@ -32,7 +32,7 @@
   font-weight: 200; 
 }
 .link:hover {
-  color:darkgray;
+  opacity:.6;
 }
 
 .active {

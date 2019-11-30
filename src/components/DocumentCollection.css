@@ -10,12 +10,13 @@
 }
 
 .hidden {
-  opacity:0%;
+  opacity:0.1;
 }
 
 .reveal {
-  opacity:100%;
-  transition: opacity 0.75s;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
 }
 
 .pdfCard{
