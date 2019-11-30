@@ -10,7 +10,7 @@
 }
 
 .app.show {
-  opacity: 1;
+  opacity: 100%;
   visibility: visible; 
 }
 
@@ -32,7 +32,7 @@
   font-weight: 200; 
 }
 .link:hover {
-  opacity:60%;
+  color:darkgray;
 }
 
 .active {
