@@ -6,9 +6,9 @@ import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const fileNames = {
-  'coloring': ['memory', 'girls', 'house', 'bear', 'tongue'],
-  'puzzles': ['puzzle', 'puzzle1', 'puzzle2', 'puzzle3', 'puzzle4', 'puzzle5'],
-  'searches': ['search1', 'search2', 'search3']
+  'coloring': ['bear'],
+  'puzzles': [],
+  'searches': ['toy search', 'fight search', 'fancy search', 'falling girls search', 'destroyer search']
 }
 const context = require.context('../assets/pdfs', true);
 

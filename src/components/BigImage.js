@@ -21,7 +21,7 @@ const BigImage = ({isMobile, imageData, images, index}) => {
       // right arrow
       if (event.keyCode === 39) scrollImage("forward");
       // left arrow
-      else if(event.keyCode === 37) scrollImage("forward");
+      else if(event.keyCode === 37) scrollImage("backward");
     }
     window.addEventListener('keydown', handler)
     return () => { window.removeEventListener('keydown', handler)}

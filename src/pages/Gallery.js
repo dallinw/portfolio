@@ -16,7 +16,7 @@ const STD_BTN_CLASSNAME = "buttonBar";
 const MOB_BTN_CLASSNAME = "buttonBarMobile";
 
 const NUM_COLUMNS = 3; // for the selection grid of images
-const buttonClasses = { all: BOLD_CLASSNAME, illustration: BASE_CLASSNAME, painting: BASE_CLASSNAME, print: BASE_CLASSNAME }
+const buttonClasses = { all: BOLD_CLASSNAME, illustration: BASE_CLASSNAME, painting: BASE_CLASSNAME, journal: BASE_CLASSNAME }
 
 const Gallery = () => {
   let [bigImgIndex, setBigImgIndex] = useState(0); // index to show the main image
@@ -30,7 +30,7 @@ const Gallery = () => {
   {
     if(collection === "all") return all;
     var filtered = all.filter(function (obj) {
-      return obj.type === collection;
+      return obj.type.indexOf(collection) !== -1;
     });
     return filtered;
   }
@@ -88,7 +88,7 @@ const Gallery = () => {
         <button className={buttonClasses["all"]} onClick={() => {changeCollection("all")}}>all</button>
         <button className={buttonClasses["illustration"]} onClick={() => {changeCollection("illustration")}}>illustrations</button>
         <button className={buttonClasses["painting"]} onClick={() => {changeCollection("painting")}}>paintings</button>
-        <button className={buttonClasses["print"]} onClick={() => {changeCollection("print")}}>prints</button>
+        <button className={buttonClasses["journal"]} onClick={() => {changeCollection("journal")}}>journals</button>
       </div>
       <BigImage isMobile={isMobile} imageData={imageData} images={images} index={bigImgIndex}/>
       <div className="parent">
