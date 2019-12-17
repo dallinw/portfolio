@@ -18,7 +18,7 @@
     flex-direction:row;
 }
 
-.year {
+.yearEntry {
     text-align:right;
     margin-left: -160px;
     white-space:nowrap;

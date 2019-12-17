@@ -14,6 +14,10 @@
   visibility: visible; 
 }
 
+.mobile {
+  text-align:center;
+}
+
 .nav {
   list-style-type: none;
   line-height:200%;
@@ -26,11 +30,27 @@
   margin-left:2%;
 }
 
+.navMobile {
+  list-style-type: none;
+  color: black;
+  text-decoration:none;
+  font-size: 14px;
+  text-transform:uppercase;
+  padding:10px;
+  margin-bottom:50px;
+}
+
+.navMobile li {
+  padding:10px;
+  display:inline !important;
+}
+
 .link {
   color:black;
   text-decoration: none;
   font-weight: 200; 
 }
+
 .link:hover {
   opacity:.6;
 }

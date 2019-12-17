@@ -76,20 +76,27 @@ const Gallery = () => {
       </div>
     )
   }
-
-  // responsiveness
-  let buttonBarClassName = STD_BTN_CLASSNAME;
-  const isMobile = useMediaQuery({ query: '(max-width: 550px)' })
-  if(isMobile) buttonBarClassName=MOB_BTN_CLASSNAME;
-
-  return (
-    <div className="gallery">
+  
+  // button bar object to render collection selectors
+  const ButtonBar = ({}) => {
+    return (
       <div className={buttonBarClassName} ref={imageRef}>
         <button className={buttonClasses["all"]} onClick={() => {changeCollection("all")}}>all</button>
         <button className={buttonClasses["illustration"]} onClick={() => {changeCollection("illustration")}}>illustrations</button>
         <button className={buttonClasses["painting"]} onClick={() => {changeCollection("painting")}}>paintings</button>
         <button className={buttonClasses["journal"]} onClick={() => {changeCollection("journal")}}>journals</button>
       </div>
+    )
+  }
+
+  // responsiveness
+  let buttonBarClassName = STD_BTN_CLASSNAME;
+  const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
+  if(isMobile) buttonBarClassName=MOB_BTN_CLASSNAME;
+
+  return (
+    <div className="gallery">
+    <ButtonBar />
       <BigImage isMobile={isMobile} imageData={imageData} images={images} index={bigImgIndex}/>
       <div className="parent">
           <ImageColumn modVal={0} />

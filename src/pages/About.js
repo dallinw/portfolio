@@ -40,9 +40,9 @@ function parse(collection) {
 }
 
 const Entry = ({year, entry, italics}) => {
-  let yearClass = "year";
+  let yearClass = "yearEntry";
   const isMobile = useMediaQuery({ query: '(max-width: 750px)' })
-  if(isMobile) yearClass="yearMobile"
+  if(isMobile) yearClass="yearEntryMobile"
   return (
     <div className="cv">
       <span className={yearClass}>
