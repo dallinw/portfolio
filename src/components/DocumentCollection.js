@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react';
-import { Document, Page } from 'react-pdf';
+import React, {useState, useEffect, lazy, Suspense} from 'react';
 import './DocumentCollection.css'
 // pdfjs CDN
 import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+const Document = lazy(() => import('./PDFPreview'));
 
 const fileNames = {
   'coloring': ['bear'],
@@ -36,25 +36,14 @@ const DocumentCollection = ({collection, show}) => {
     return paths;
   }
 
-  function getWidth()
-  {
-    const pageWidth = window.innerWidth;
-    return (pageWidth > 400) ? 400 : pageWidth-50;
-  }
-
   if(collection === "default") return null;
   return (
     <div className={showClassName}>
       {pdfs.map((path, index) => {
         return (
-          <a className="blankButton" href={path} target="_blank" key={index}>
-          <div className="pdfCard" key={index}>
-            <Document className="previewDoc" file={path} key={index} loading="">
-              <Page className="previewPage" pageNumber={1} loading="" key={index} width={getWidth()}/>
-            </Document>
-            <p className="pdfLabel">{collectionNames[index]}</p>
-          </div>
-          </a>
+          <Suspense fallback={""}>
+            <Document path={path} title={collectionNames[index]} key={index}/>
+          </Suspense>
         )
       })}
     </div>
