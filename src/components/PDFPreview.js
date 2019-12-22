@@ -12,10 +12,10 @@ const PDFPreview = ({ title, path }) => {
   }
 
   return (
-    <a className="blankButton" href={path} target="_blank">
+    <a className="blankButton" href={path} target="_blank" rel="noopener noreferrer">
     <div className="pdfCard">
       <Document className="previewDoc" file={path} loading="">
-        <Page className="previewPage" pageNumber={1} loading="" width={getWidth()}/>
+        <Page className="previewPage" pageNumber={1} renderAnnotationLayer={false} loading="" width={getWidth()}/>
       </Document>
       <p className="pdfLabel">{title}</p>
     </div>
