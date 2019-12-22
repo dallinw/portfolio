@@ -3,14 +3,14 @@
     "main.css": "/static/css/main.5d301ada.chunk.css",
     "main.js": "/static/js/main.8d9c550d.chunk.js",
     "main.js.map": "/static/js/main.8d9c550d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ded0cba7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ded0cba7.js.map",
+    "runtime-main.js": "/static/js/runtime-main.42865327.js",
+    "runtime-main.js.map": "/static/js/runtime-main.42865327.js.map",
     "static/js/2.b9454e3d.chunk.js": "/static/js/2.b9454e3d.chunk.js",
     "static/js/2.b9454e3d.chunk.js.map": "/static/js/2.b9454e3d.chunk.js.map",
-    "static/js/3.d65d251d.chunk.js": "/static/js/3.d65d251d.chunk.js",
-    "static/js/3.d65d251d.chunk.js.map": "/static/js/3.d65d251d.chunk.js.map",
+    "static/js/3.a924dca9.chunk.js": "/static/js/3.a924dca9.chunk.js",
+    "static/js/3.a924dca9.chunk.js.map": "/static/js/3.a924dca9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.be98142e150367f1c6633b46df2d043b.js": "/precache-manifest.be98142e150367f1c6633b46df2d043b.js",
+    "precache-manifest.38a503f32db959ecf9bbb7323523390a.js": "/precache-manifest.38a503f32db959ecf9bbb7323523390a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.5d301ada.chunk.css.map": "/static/css/main.5d301ada.chunk.css.map",
     "static/media/colorfulgirls.jpg": "/static/media/colorfulgirls.9a4acd67.jpg",
@@ -39,7 +39,7 @@
     "static/media/toy search.pdf": "/static/media/toy search.06bc23f3.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.ded0cba7.js",
+    "static/js/runtime-main.42865327.js",
     "static/js/2.b9454e3d.chunk.js",
     "static/css/main.5d301ada.chunk.css",
     "static/js/main.8d9c550d.chunk.js"
