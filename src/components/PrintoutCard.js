@@ -9,7 +9,9 @@ const PrintoutCard = ({heading, image}) => {
     return (
         <div className={cardClassName}>
           <h1 className="cardHeading">{heading}</h1>
-          <img className="cardImg" src={image} alt=""/>
+          <div className="imageFlex">
+           <img className="cardImg" src={image} alt=""/>
+          </div>
         </div>
     )
 }

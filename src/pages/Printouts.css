@@ -1,3 +1,8 @@
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
 .printouts {
     max-width:90vw;
     margin-left:auto;

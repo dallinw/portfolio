@@ -6,7 +6,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const Document = lazy(() => import('./PDFPreview'));
 
 const fileNames = {
-  'coloring': ['bear'],
+  'coloring': ['my girlfriend coloring page', 'the cow said coloring page', 'miley cyrus pet pig coloring page'],
   'puzzles': [],
   'searches': ['toy search', 'fight search', 'fancy search', 'falling girls search', 'destroyer search']
 }

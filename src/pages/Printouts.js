@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import PrintoutCard from '../components/PrintoutCard';
 import DocumentCollection from '../components/DocumentCollection';
-import Papaya from '../assets/images/housesgirls.png'
 import Search from '../assets/images/search.png'
-import Restaurant from '../assets/images/restaurant.png'
+import Hold from '../assets/images/hold.png'
 import { useMediaQuery } from 'react-responsive'
 import './Printouts.css'
 
@@ -24,16 +23,15 @@ const Printouts = () => {
 
   return (
       <div className="printouts">
-          <button className="blankButton" onClick={()=>updateCollection("puzzles")}>
-            <PrintoutCard heading="Puzzles" image={Papaya}/>
-          </button>
-          <button className="blankButton" onClick={()=>updateCollection("searches")}>
+        <div className="cards">
+         <button className="blankButton" onClick={()=>updateCollection("searches")}>
             <PrintoutCard heading="Searches" image={Search}/>
           </button>
           <button className="blankButton" onClick={()=>updateCollection("coloring")} ref={scrollRef}>
-            <PrintoutCard heading="Coloring Pages" image={Restaurant}/>
+            <PrintoutCard heading="Coloring Pages" image={Hold}/>
           </button>
-          <DocumentCollection collection={collection} show={show}/>
+        </div>
+        <DocumentCollection collection={collection} show={show}/>
       </div>
   )
 }

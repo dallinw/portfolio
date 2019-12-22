@@ -1,6 +1,6 @@
 const data = {
     BIO: [
-        "Mikaella Antonio was born in Makati, Philippines in 1997 and immigrated with her family to South Carolina in 2003. A writer and an artist, Antonio combines textual and visual elements to examine relationships between narrative forms and lived experience. Her work investigates how we tell stories about ourselves, how we choose to exist among others, and how we navigate between inner and public life. Her characters play out various fictions, embodying not only themselves, but their collective identities, and never assuming just one, exact way of being.",
+        "Mikaella Antonio was born in Makati, Philippines in 1997 and immigrated with her family to South Carolina in 2003. In her drawings, Antonio combines textual and visual elements to examine relationships between narrative forms and lived experience. Her work investigates how we tell stories about ourselves, how we choose to exist among others, and how we navigate between inner and public life. Her characters play out various fictions, embracing their emotions, celebrating their communities and never assuming just one, exact way of being.",
         "Antonio received B.A.’s in English and Art Studio at the University of South Carolina. She currently lives in Charlotte, NC, where she works for the Charlotte-Mecklenburg Library."
     ],
     STATEMENT: [
