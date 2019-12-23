@@ -1,9 +1,11 @@
 .card {
+    max-width:100%;
     width:450px;
-    height:450px;
+    height:350px;
     margin: 10px;
     padding:10px;
     text-align:center;
+    margin-bottom:50px;
 }
 
 .card.mobile{
