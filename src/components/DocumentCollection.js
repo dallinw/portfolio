@@ -1,9 +1,9 @@
-import React, {useState, useEffect, lazy, Suspense} from 'react';
+import React, { useState, useEffect } from 'react';
+import Document from './PDFPreview';
 import './DocumentCollection.css'
 // pdfjs CDN
 import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-const Document = lazy(() => import('./PDFPreview'));
 
 const fileNames = {
   'coloring': ['my girlfriend coloring page', 'the cow said coloring page', 'miley cyrus pet pig coloring page'],
@@ -41,9 +41,7 @@ const DocumentCollection = ({collection, show}) => {
     <div className={showClassName}>
       {pdfs.map((path, index) => {
         return (
-          <Suspense fallback={""}>
             <Document path={path} title={collectionNames[index]} key={index}/>
-          </Suspense>
         )
       })}
     </div>

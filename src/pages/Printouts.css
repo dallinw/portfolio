@@ -1,6 +1,7 @@
 .cards {
-    display: flex;
-    justify-content: center;
+    max-width:90vw;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .printouts {
@@ -11,6 +12,8 @@
 }
 
 .blankButton {
+    max-width:100%;
+    max-height:100%;
     background-color:white;
     border:none;
     outline:none;
