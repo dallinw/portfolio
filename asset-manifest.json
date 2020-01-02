@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.4844f231.chunk.css",
-    "main.js": "/static/js/main.898a23e5.chunk.js",
-    "main.js.map": "/static/js/main.898a23e5.chunk.js.map",
+    "main.js": "/static/js/main.fb5eaccc.chunk.js",
+    "main.js.map": "/static/js/main.fb5eaccc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.74b7606e.js",
     "runtime-main.js.map": "/static/js/runtime-main.74b7606e.js.map",
-    "static/js/2.9457c9aa.chunk.js": "/static/js/2.9457c9aa.chunk.js",
-    "static/js/2.9457c9aa.chunk.js.map": "/static/js/2.9457c9aa.chunk.js.map",
+    "static/js/2.a51fba64.chunk.js": "/static/js/2.a51fba64.chunk.js",
+    "static/js/2.a51fba64.chunk.js.map": "/static/js/2.a51fba64.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ac46104757db3e293a2343af76936018.js": "/precache-manifest.ac46104757db3e293a2343af76936018.js",
+    "precache-manifest.acf7c018ea930028fbcaa22fa75a95f6.js": "/precache-manifest.acf7c018ea930028fbcaa22fa75a95f6.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.4844f231.chunk.css.map": "/static/css/main.4844f231.chunk.css.map",
     "static/media/colorfulgirls.jpg": "/static/media/colorfulgirls.9a4acd67.jpg",
@@ -30,16 +30,26 @@
     "static/media/miley cyrus pet pig coloring page.pdf": "/static/media/miley cyrus pet pig coloring page.ef289255.pdf",
     "static/media/miley.png": "/static/media/miley.2e0cc99d.png",
     "static/media/my girlfriend coloring page.pdf": "/static/media/my girlfriend coloring page.ef527d72.pdf",
+    "static/media/portrait_backofyou.jpeg": "/static/media/portrait_backofyou.a5680187.jpeg",
+    "static/media/portrait_dallin.jpeg": "/static/media/portrait_dallin.30da9284.jpeg",
+    "static/media/portrait_fingers.jpeg": "/static/media/portrait_fingers.80f4db0c.jpeg",
+    "static/media/portrait_kuya.jpeg": "/static/media/portrait_kuya.7f88be0b.jpeg",
+    "static/media/portrait_mydad.jpeg": "/static/media/portrait_mydad.84fc573c.jpeg",
+    "static/media/portrait_myself.jpeg": "/static/media/portrait_myself.b6a6fbca.jpeg",
+    "static/media/portrait_sofie.jpeg": "/static/media/portrait_sofie.f1b8ac4a.jpeg",
+    "static/media/portrait_titonoah.jpeg": "/static/media/portrait_titonoah.0bca1ef6.jpeg",
     "static/media/problem.jpg": "/static/media/problem.8d6ae45d.jpg",
-    "static/media/restaurant.png": "/static/media/restaurant.7dd9680b.png",
     "static/media/search.png": "/static/media/search.705d05d1.png",
+    "static/media/text_alottolose.jpeg": "/static/media/text_alottolose.57132f1f.jpeg",
+    "static/media/text_justlook.jpeg": "/static/media/text_justlook.73531a73.jpeg",
+    "static/media/text_justlook2.jpeg": "/static/media/text_justlook2.06b24cae.jpeg",
     "static/media/the cow said coloring page.pdf": "/static/media/the cow said coloring page.2ab8db82.pdf",
     "static/media/toy search.pdf": "/static/media/toy search.06bc23f3.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.74b7606e.js",
-    "static/js/2.9457c9aa.chunk.js",
+    "static/js/2.a51fba64.chunk.js",
     "static/css/main.4844f231.chunk.css",
-    "static/js/main.898a23e5.chunk.js"
+    "static/js/main.fb5eaccc.chunk.js"
   ]
 }
