@@ -30,6 +30,7 @@ const BigImage = ({isMobile, imageData, images, index}) => {
   // if the index prop changes, set the local index to match
   useEffect(() => {
     if(index !== thisIndex) setThisIndex(index);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index])
 
   // scroll forward or backward; triggered by click or by keypress
@@ -73,6 +74,7 @@ const BigImage = ({isMobile, imageData, images, index}) => {
       <div className="scrollArea" onClick={() => {scrollImage("forward")}}>
         <div className="info">
           <p className="title">{imageData[thisIndex].title}</p>
+          <p className="year">{imageData[thisIndex].medium}</p>
           <p className="year">{imageData[thisIndex].year}</p>
         </div>
         {(isMobile) ? null: <div className={showArrowsClassName}>

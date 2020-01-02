@@ -16,7 +16,7 @@ const STD_BTN_CLASSNAME = "buttonBar";
 const MOB_BTN_CLASSNAME = "buttonBarMobile";
 
 const NUM_COLUMNS = 3; // for the selection grid of images
-const buttonClasses = { all: BOLD_CLASSNAME, illustration: BASE_CLASSNAME, painting: BASE_CLASSNAME, journal: BASE_CLASSNAME }
+const buttonClasses = { all: BOLD_CLASSNAME, portrait: BASE_CLASSNAME, text: BASE_CLASSNAME, journal: BASE_CLASSNAME }
 
 const Gallery = () => {
   let [bigImgIndex, setBigImgIndex] = useState(0); // index to show the main image
@@ -82,9 +82,9 @@ const Gallery = () => {
     return (
       <div className={buttonBarClassName} ref={imageRef}>
         <button className={buttonClasses["all"]} onClick={() => {changeCollection("all")}}>all</button>
-        <button className={buttonClasses["illustration"]} onClick={() => {changeCollection("illustration")}}>illustrations</button>
-        <button className={buttonClasses["painting"]} onClick={() => {changeCollection("painting")}}>paintings</button>
-        <button className={buttonClasses["journal"]} onClick={() => {changeCollection("journal")}}>journals</button>
+        <button className={buttonClasses["portrait"]} onClick={() => {changeCollection("portrait")}}>portraits</button>
+        <button className={buttonClasses["text"]} onClick={() => {changeCollection("text")}}>text</button>
+        {/* <button className={buttonClasses["journal"]} onClick={() => {changeCollection("journal")}}>journals</button> */}
       </div>
     )
   }
