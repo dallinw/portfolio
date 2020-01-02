@@ -10,9 +10,10 @@ const all = [
   {title: 'Me and My Hand', medium: 'Colored pencils', year: '2019', file: 'portrait_fingers.jpeg', type:['portrait']},
   {title: 'Sofie with Her Hand', medium: 'Colored pencils', year: '2019', file: 'portrait_sofie.jpeg', type:['portrait']},
   {title: 'The Back of You', medium: 'Colored pencils', year: '2019', file: 'portrait_backofyou.jpeg', type:['portrait']},
-  {title: 'Poem', medium: 'Linocut Print', year: '2019', file: 'text_alottolose.jpeg', type:['text']},
+  {title: 'Poem', medium: 'Linocut Print', year: '2018', file: 'text_alottolose.jpeg', type:['text']},
   {title: 'You Did It', medium: 'Lithograph', year: '2019', file: 'text_justlook.jpeg', type:['text']},
-  {title: 'You Did It', medium: 'Lithograph', year: '2019', file: 'text_justlook2.jpeg', type:['text']}
+  {title: 'You Did It', medium: 'Lithograph', year: '2019', file: 'text_justlook2.jpeg', type:['text']},
+  {title: 'Goodnite', medium: 'Ink', year: '2019', file: 'goodnite.jpg', type:['text']},
 ]
 
 export default all;

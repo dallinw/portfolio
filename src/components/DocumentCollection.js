@@ -6,9 +6,9 @@ import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const fileNames = {
-  'coloring': ['my girlfriend coloring page', 'the cow said coloring page', 'miley cyrus pet pig coloring page'],
-  'puzzles': [],
-  'searches': ['toy search', 'fight search', 'fancy search', 'falling girls search', 'destroyer search']
+  'coloring': ['my girlfriend coloring page', 'the cow said coloring page', 'miley cyrus pet pig coloring page', 'pronoun coloring page', 'chicken coloring page'],
+  'puzzles': ['best american girl maze', 'selfie maze'],
+  'searches': ['toy search', 'fight search', 'fancy search', 'falling girls search', 'destroyer search', 'offering search', 'room search']
 }
 const context = require.context('../assets/pdfs', true);
 

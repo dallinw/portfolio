@@ -3,6 +3,7 @@ import PrintoutCard from '../components/PrintoutCard';
 import DocumentCollection from '../components/DocumentCollection';
 import Search from '../assets/images/search.png'
 import Hold from '../assets/images/hold.png'
+import Puzzles from '../assets/images/puzzles.png'
 import { useMediaQuery } from 'react-responsive'
 import './Printouts.css'
 
@@ -24,10 +25,13 @@ const Printouts = () => {
   return (
       <div className="printouts">
         <div className="cards">
+        <button className="blankButton" onClick={()=>updateCollection("puzzles")}>
+            <PrintoutCard heading="Puzzles" image={Puzzles}/>
+          </button>
          <button className="blankButton" onClick={()=>updateCollection("searches")}>
             <PrintoutCard heading="Searches" image={Search}/>
           </button>
-          <button className="blankButton" onClick={()=>updateCollection("coloring")} ref={scrollRef}>
+          <button className="blankButton" onClick={()=>updateCollection("coloring")}>
             <PrintoutCard heading="Coloring Pages" image={Hold}/>
           </button>
         </div>
