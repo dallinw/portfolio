@@ -14,6 +14,21 @@ const all = [
   {title: 'You Did It', medium: 'Lithograph', year: '2019', file: 'text_justlook.jpeg', type:['text']},
   {title: 'You Did It', medium: 'Lithograph', year: '2019', file: 'text_justlook2.jpeg', type:['text']},
   {title: 'Goodnite', medium: 'Ink', year: '2019', file: 'goodnite.jpg', type:['text']},
+  {title: 'Because You Said Wait', medium: 'Ink and acrylic on tissue paper', year: '2019', file: 'text_because.jpeg', type:['text']},
+  {title: 'Because You Said Wait', medium: 'Ink and acrylic on tissue paper', year: '2019', file: 'text_because2.jpeg', type:['text']},
+  {title: 'Because You Said Wait', medium: 'Ink and acrylic on tissue paper', year: '2019', file: 'text_because3.jpeg', type:['text']},
+  {title: 'Anything You Want (Until)', medium: 'Ink on tissue paper', year: '2019', file: 'text_anything.jpeg', type:['text']},
+  {title: 'Anything You Want (Until)', medium: 'Ink on tissue paper', year: '2019', file: 'text_anything2.jpeg', type:['text']},
+  {title: 'Anything You Want (Until)', medium: 'Ink on tissue paper', year: '2019', file: 'text_anything3.jpeg', type:['text']},
+  {title: 'Dear Dream Kiss', medium: 'Ink and colored pencils', year: '2019', file: 'text_dear.jpeg', type:['text']},
+  {title: 'Dear Dream Kiss', medium: 'Ink and colored pencils', year: '2019', file: 'text_dear2.jpeg', type:['text']},
+  {title: 'Thanks I Won\'t Forget', medium: 'Ink, yarn, and colored pencils', year: '2019', file: 'text_thanks.jpeg', type:['text']},
+  {title: 'Thanks I Won\'t Forget', medium: 'Ink, yarn, and colored pencils', year: '2019', file: 'text_thanks2.jpeg', type:['text']},
+  {title: 'Thanks I Won\'t Forget', medium: 'Ink, yarn, and colored pencils', year: '2019', file: 'text_thanks3.jpeg', type:['text']},
+  {title: 'New Ways', medium: 'Ink, graphite, acrylic, and pen', year: '2019', file: 'text_newways.jpeg', type:['text']},
+  {title: 'New Ways', medium: 'Ink, graphite, acrylic, and pen', year: '2019', file: 'text_newways2.jpeg', type:['text']},
+  {title: 'I have not yelled', medium: 'Ink, acrylic, colored pencils, and pen', year: '2019', file: 'text_fivemonths.jpeg', type:['text']},
+  {title: 'I have not yelled', medium: 'Ink, acrylic, colored pencils, and pen', year: '2019', file: 'text_fivemonths2.jpeg', type:['text']},
 ]
 
 export default all;
