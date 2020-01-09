@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.201aef11.chunk.css",
-    "main.js": "/static/js/main.90ff90d6.chunk.js",
-    "main.js.map": "/static/js/main.90ff90d6.chunk.js.map",
+    "main.js": "/static/js/main.567476dc.chunk.js",
+    "main.js.map": "/static/js/main.567476dc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.74b7606e.js",
     "runtime-main.js.map": "/static/js/runtime-main.74b7606e.js.map",
-    "static/js/2.86a789d4.chunk.js": "/static/js/2.86a789d4.chunk.js",
-    "static/js/2.86a789d4.chunk.js.map": "/static/js/2.86a789d4.chunk.js.map",
+    "static/js/2.9628809c.chunk.js": "/static/js/2.9628809c.chunk.js",
+    "static/js/2.9628809c.chunk.js.map": "/static/js/2.9628809c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.70d4a48045c75cd73f638fe56fb5d5a6.js": "/precache-manifest.70d4a48045c75cd73f638fe56fb5d5a6.js",
+    "precache-manifest.f348d37ffffcfc10234972784265a2a8.js": "/precache-manifest.f348d37ffffcfc10234972784265a2a8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.201aef11.chunk.css.map": "/static/css/main.201aef11.chunk.css.map",
     "static/media/best american girl maze.pdf": "/static/media/best american girl maze.ec81c8b5.pdf",
@@ -51,15 +51,30 @@
     "static/media/search.png": "/static/media/search.705d05d1.png",
     "static/media/selfie maze.pdf": "/static/media/selfie maze.43cb5555.pdf",
     "static/media/text_alottolose.jpeg": "/static/media/text_alottolose.57132f1f.jpeg",
+    "static/media/text_anything.jpeg": "/static/media/text_anything.c24e109a.jpeg",
+    "static/media/text_anything2.jpeg": "/static/media/text_anything2.533c1b46.jpeg",
+    "static/media/text_anything3.jpeg": "/static/media/text_anything3.4160f486.jpeg",
+    "static/media/text_because.jpeg": "/static/media/text_because.435b7196.jpeg",
+    "static/media/text_because2.jpeg": "/static/media/text_because2.66ce595d.jpeg",
+    "static/media/text_because3.jpeg": "/static/media/text_because3.8c416a9c.jpeg",
+    "static/media/text_dear.jpeg": "/static/media/text_dear.0bb672ae.jpeg",
+    "static/media/text_dear2.jpeg": "/static/media/text_dear2.21b4c25a.jpeg",
+    "static/media/text_fivemonths.jpeg": "/static/media/text_fivemonths.084fb83d.jpeg",
+    "static/media/text_fivemonths2.jpeg": "/static/media/text_fivemonths2.3f7b1dd7.jpeg",
     "static/media/text_justlook.jpeg": "/static/media/text_justlook.73531a73.jpeg",
     "static/media/text_justlook2.jpeg": "/static/media/text_justlook2.06b24cae.jpeg",
+    "static/media/text_newways.jpeg": "/static/media/text_newways.3a7b5da2.jpeg",
+    "static/media/text_newways2.jpeg": "/static/media/text_newways2.c262eb53.jpeg",
+    "static/media/text_thanks.jpeg": "/static/media/text_thanks.9d0a15f5.jpeg",
+    "static/media/text_thanks2.jpeg": "/static/media/text_thanks2.c8ea5816.jpeg",
+    "static/media/text_thanks3.jpeg": "/static/media/text_thanks3.a0f0aeb5.jpeg",
     "static/media/the cow said coloring page.pdf": "/static/media/the cow said coloring page.2ab8db82.pdf",
     "static/media/toy search.pdf": "/static/media/toy search.06bc23f3.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.74b7606e.js",
-    "static/js/2.86a789d4.chunk.js",
+    "static/js/2.9628809c.chunk.js",
     "static/css/main.201aef11.chunk.css",
-    "static/js/main.90ff90d6.chunk.js"
+    "static/js/main.567476dc.chunk.js"
   ]
 }
