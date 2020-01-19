@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.201aef11.chunk.css",
-    "main.js": "/static/js/main.567476dc.chunk.js",
-    "main.js.map": "/static/js/main.567476dc.chunk.js.map",
+    "main.js": "/static/js/main.213f0a79.chunk.js",
+    "main.js.map": "/static/js/main.213f0a79.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.74b7606e.js",
     "runtime-main.js.map": "/static/js/runtime-main.74b7606e.js.map",
-    "static/js/2.9628809c.chunk.js": "/static/js/2.9628809c.chunk.js",
-    "static/js/2.9628809c.chunk.js.map": "/static/js/2.9628809c.chunk.js.map",
+    "static/js/2.8ded0091.chunk.js": "/static/js/2.8ded0091.chunk.js",
+    "static/js/2.8ded0091.chunk.js.map": "/static/js/2.8ded0091.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f348d37ffffcfc10234972784265a2a8.js": "/precache-manifest.f348d37ffffcfc10234972784265a2a8.js",
+    "precache-manifest.c7b7c958669951a1c972fe8defe1413d.js": "/precache-manifest.c7b7c958669951a1c972fe8defe1413d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.201aef11.chunk.css.map": "/static/css/main.201aef11.chunk.css.map",
     "static/media/best american girl maze.pdf": "/static/media/best american girl maze.ec81c8b5.pdf",
@@ -28,6 +28,16 @@
     "static/media/home page - toy.png": "/static/media/home page - toy.53e833ce.png",
     "static/media/house.png": "/static/media/house.3356ee72.png",
     "static/media/housesgirls.png": "/static/media/housesgirls.802add75.png",
+    "static/media/journal_abigail.jpeg": "/static/media/journal_abigail.b23a9000.jpeg",
+    "static/media/journal_bahay.jpeg": "/static/media/journal_bahay.ef6f46b8.jpeg",
+    "static/media/journal_burger.jpeg": "/static/media/journal_burger.c2141f76.jpeg",
+    "static/media/journal_cowsaid.jpeg": "/static/media/journal_cowsaid.8b923b68.jpeg",
+    "static/media/journal_cry.jpeg": "/static/media/journal_cry.7a45b9a8.jpeg",
+    "static/media/journal_myjesus.jpeg": "/static/media/journal_myjesus.f049f436.jpeg",
+    "static/media/journal_running.jpeg": "/static/media/journal_running.7e781467.jpeg",
+    "static/media/journal_stinkypaws.jpeg": "/static/media/journal_stinkypaws.3e6b82a4.jpeg",
+    "static/media/journal_trampoline.jpeg": "/static/media/journal_trampoline.2e769cdf.jpeg",
+    "static/media/journal_umean.jpeg": "/static/media/journal_umean.a51a1106.jpeg",
     "static/media/jumping.jpg": "/static/media/jumping.89236c10.jpg",
     "static/media/laughing.jpg": "/static/media/laughing.f1fee573.jpg",
     "static/media/miley cyrus pet pig coloring page.pdf": "/static/media/miley cyrus pet pig coloring page.ef289255.pdf",
@@ -73,8 +83,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.74b7606e.js",
-    "static/js/2.9628809c.chunk.js",
+    "static/js/2.8ded0091.chunk.js",
     "static/css/main.201aef11.chunk.css",
-    "static/js/main.567476dc.chunk.js"
+    "static/js/main.213f0a79.chunk.js"
   ]
 }
