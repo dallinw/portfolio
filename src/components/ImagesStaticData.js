@@ -29,6 +29,16 @@ const all = [
   {title: 'New Ways', medium: 'Ink, graphite, acrylic, and pen', year: '2019', file: 'text_newways2.jpeg', type:['text']},
   {title: 'I have not yelled', medium: 'Ink, acrylic, colored pencils, and pen', year: '2019', file: 'text_fivemonths.jpeg', type:['text']},
   {title: 'I have not yelled', medium: 'Ink, acrylic, colored pencils, and pen', year: '2019', file: 'text_fivemonths2.jpeg', type:['text']},
+  {title: '', medium: '', year: '2019', file: 'journal_abigail.jpeg', type:['journal']},
+  {title: '', medium: '', year: '2019', file: 'journal_trampoline.jpeg', type:['journal']},
+  {title: '', medium: '', year: '2019', file: 'journal_running.jpeg', type:['journal']},
+  {title: '', medium: '', year: '2019', file: 'journal_cry.jpeg', type:['journal']},
+  {title: '', medium: '', year: '2019', file: 'journal_umean.jpeg', type:['journal']},
+  {title: '', medium: '', year: '2019', file: 'journal_myjesus.jpeg', type:['journal']},
+  {title: '', medium: '', year: '2019', file: 'journal_stinkypaws.jpeg', type:['journal']},
+  {title: '', medium: '', year: '2019', file: 'journal_cowsaid.jpeg', type:['journal']},
+  {title: '', medium: '', year: '2019', file: 'journal_burger.jpeg', type:['journal']},
+  {title: '', medium: '', year: '2019', file: 'journal_bahay.jpeg', type:['journal']},
 ]
 
 export default all;

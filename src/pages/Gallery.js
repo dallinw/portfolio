@@ -84,7 +84,7 @@ const Gallery = () => {
         <button className={buttonClasses["all"]} onClick={() => {changeCollection("all")}}>all</button>
         <button className={buttonClasses["portrait"]} onClick={() => {changeCollection("portrait")}}>portraits</button>
         <button className={buttonClasses["text"]} onClick={() => {changeCollection("text")}}>text</button>
-        {/* <button className={buttonClasses["journal"]} onClick={() => {changeCollection("journal")}}>journals</button> */}
+        <button className={buttonClasses["journal"]} onClick={() => {changeCollection("journal")}}>journals</button>
       </div>
     )
   }
