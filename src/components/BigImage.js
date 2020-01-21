@@ -68,7 +68,9 @@ const BigImage = ({isMobile, imageData, images, index}) => {
     <div className={imgParentClassName} onMouseEnter={()=>{toggleShowArrows()}} onMouseLeave={()=>{toggleShowArrows()}}>
       {(isMobile) ? null : 
       <div className={showArrowsClassName} onClick={() => {scrollImage("backward")}}>
-        <button className="scrollButton"><img className="smallIcon" src={Back} alt="back"/></button>
+        <button className="scrollButton">
+            <img className="smallIcon" src={Back} alt="back"/>
+        </button>
       </div>}
       <img onClick={() => {scrollImage("forward")}} className={imgClassName} src={images[thisIndex]} alt={imageData[thisIndex].title}/>
       <div className="scrollArea" onClick={() => {scrollImage("forward")}}>

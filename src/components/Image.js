@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Image.css'
 
-const images = require.context('../assets/images', true);
+const images = require.context('../assets/images/hi-res', true);
 
 const imageNames = ['home page - destroyer.png', 'home page - falling girls.png', 'home page - fight.png', 'home page - lawn.png', 'home page - the cow said.png', 'home page - toy.png',];
 

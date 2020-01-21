@@ -1,13 +1,14 @@
 import React, {useState, useRef} from 'react';
-import { useMediaQuery } from 'react-responsive'
-import BigImage from '../components/BigImage'
-import all from '../components/ImagesStaticData'
+import { useMediaQuery } from 'react-responsive';
+import BigImage from '../components/BigImage';
+import all from '../components/ImagesStaticData';
 import './Gallery.css';
 
 /**************************************************
  * Constants
  *************************************************/
-const context = require.context('../assets/images', true);
+const hiRes = require.context('../assets/images/hi-res', true);
+const lowRes = require.context('../assets/images/low-res', true);
 
 //classnames for responsiveness and show/hide
 const BASE_CLASSNAME = "collectionButton";
@@ -23,7 +24,7 @@ const Gallery = () => {
   let [collection, setCollection] = useState("all"); // filtering collection selection
   const imageRef = useRef(null); // scroll to big image when a new image is selected
   let imageData = filterImages();
-  let images = getContext();
+  let images = getHiRes();
 
   // get all the images from the collection for the grid
   function filterImages()
@@ -35,16 +36,28 @@ const Gallery = () => {
     return filtered;
   }
 
-  // from the filtered image array, get the actual files
-  function getContext()
+  // from the filtered image array, get the actual files, for high resolution
+  function getHiRes()
   {
     let images = [];
     imageData.forEach(name=> {
-      let image = context(`./${name.file}`)
+      let image = hiRes(`./${name.file}`)
       images.push(image);
     })
     return images;
   }
+
+    // from the filtered image array, get the actual files, for low resolution
+    // TODO
+    function getLowRes()
+    {
+      let images = [];
+      imageData.forEach(name=> {
+        let image = lowRes(`./${name.file}`)
+        images.push(image);
+      })
+      return images;
+    }
 
   // select a new index to show in the big image and scroll there
   function selectImage(index){
@@ -78,7 +91,7 @@ const Gallery = () => {
   }
   
   // button bar object to render collection selectors
-  const ButtonBar = ({}) => {
+  const ButtonBar = () => {
     return (
       <div className={buttonBarClassName} ref={imageRef}>
         <button className={buttonClasses["all"]} onClick={() => {changeCollection("all")}}>all</button>

@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import PrintoutCard from '../components/PrintoutCard';
 import DocumentCollection from '../components/DocumentCollection';
-import Search from '../assets/images/search.png'
-import Hold from '../assets/images/hold.png'
-import Puzzles from '../assets/images/puzzles.png'
+import Search from '../assets/images/hi-res/search.png'
+import Hold from '../assets/images/hi-res/hold.png'
+import Puzzles from '../assets/images/hi-res/puzzles.png'
 import { useMediaQuery } from 'react-responsive'
 import './Printouts.css'
 
 const Printouts = () => {
   const [collection, setCollection] = useState("default");
   const [show, setShow] = useState(true);
-  let scrollRef = React.createRef();
 
   const isMobile = useMediaQuery({ query: '(max-width: 550px)' })
 
