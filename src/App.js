@@ -9,6 +9,7 @@ import About from './pages/About'
 import Printouts from './pages/Printouts'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
+import Instagram from './assets/images/icons/instagram.png'
 
 import './App.css';
 
@@ -41,6 +42,9 @@ const BaseLayout = ({show}) => {
     <div className={componentClasses.join(' ')}>
       <header>
         <nav className={parentClassName}>
+        <a href="https://instagram.com/mikki.antonio">
+          <img className='ig' src={Instagram} alt='ig'></img>
+        </a>
           <ul className={navClassName}>
             <li><NavLink activeClassName="active" className="link" exact to='/'>HOME</NavLink></li>
             <li><NavLink activeClassName="active" className="link" to='/about'>ABOUT</NavLink></li>
