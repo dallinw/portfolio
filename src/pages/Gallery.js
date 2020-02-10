@@ -48,7 +48,7 @@ const Gallery = () => {
   }
 
     // from the filtered image array, get the actual files, for low resolution
-    // TODO
+    // TODO - use it to initially render a low res version of the image
     function getLowRes()
     {
       let images = [];

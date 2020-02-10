@@ -24,7 +24,7 @@ const Printouts = () => {
   return (
       <div className="printouts">
         <div className="cards">
-        <button className="blankButton" onClick={()=>updateCollection("puzzles")}>
+        <button className="blankButton" onClick={()=>updateCollection("mazes")}>
             <PrintoutCard heading="Puzzles" image={Puzzles}/>
           </button>
          <button className="blankButton" onClick={()=>updateCollection("searches")}>
