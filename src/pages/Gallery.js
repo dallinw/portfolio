@@ -1,13 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import BigImage from '../components/BigImage';
-import all from '../components/ImagesStaticData';
 import './Gallery.css';
 
 /**************************************************
  * Constants
  *************************************************/
-const hiRes = require.context('../assets/images/hi-res', true);
 
 //classnames for responsiveness and show/hide
 const BASE_CLASSNAME = 'collectionButton';
@@ -16,37 +14,22 @@ const STD_BTN_CLASSNAME = 'buttonBar';
 const MOB_BTN_CLASSNAME = 'buttonBarMobile';
 
 const NUM_COLUMNS = 3; // for the selection grid of images
-const buttonClasses = {
-  all: BOLD_CLASSNAME,
-  portrait: BASE_CLASSNAME,
-  text: BASE_CLASSNAME,
-  journal: BASE_CLASSNAME,
-};
 
-const Gallery = () => {
+const Gallery = ({ content }) => {
   let [bigImgIndex, setBigImgIndex] = useState(0); // index to show the main image
   let [collection, setCollection] = useState('all'); // filtering collection selection
   const imageRef = useRef(null); // scroll to big image when a new image is selected
   let imageData = filterImages();
-  let images = getHiRes();
 
   // get all the images from the collection for the grid
   function filterImages() {
-    if (collection === 'all') return all;
-    var filtered = all.filter(function (obj) {
-      return obj.type.indexOf(collection) !== -1;
-    });
+    if (!content) {
+      return;
+    }
+    if (collection === 'all') return content.photos;
+    console.log(content.photos, collection);
+    var filtered = [...content.photos.filter((el) => el.type === collection)];
     return filtered;
-  }
-
-  // from the filtered image array, get the actual files, for high resolution
-  function getHiRes() {
-    let images = [];
-    imageData.forEach((name) => {
-      let image = hiRes(`./${name.file}`);
-      images.push(image);
-    });
-    return images;
   }
 
   // select a new index to show in the big image and scroll there
@@ -57,6 +40,7 @@ const Gallery = () => {
         behavior: 'smooth',
       });
     setTimeout(() => {
+      console.log(index);
       setBigImgIndex(index);
     }, 100);
   }
@@ -65,73 +49,51 @@ const Gallery = () => {
   function changeCollection(coll) {
     setCollection(coll);
     setBigImgIndex(0);
-    for (var key in buttonClasses) {
-      if (buttonClasses.hasOwnProperty(key)) {
-        if (buttonClasses[key] === BOLD_CLASSNAME)
-          buttonClasses[key] = BASE_CLASSNAME;
-      }
-    }
-    buttonClasses[coll] = BOLD_CLASSNAME;
   }
 
   // imageColumn object; mod should be 0, 1, 2 up to NUM_COLUMNS
   const ImageColumn = ({ modVal }) => {
     return (
       <div className='flexCol'>
-        {images.map((value, index) => {
-          return index % NUM_COLUMNS === modVal ? (
-            <img
-              className='colImg'
-              src={value}
-              listid={index}
-              onClick={() => {
-                selectImage(index);
-              }}
-              key={index}
-              alt={imageData[index].title}
-            />
-          ) : null;
-        })}
+        {imageData &&
+          imageData.map((value, index) => {
+            return index % NUM_COLUMNS === modVal ? (
+              <img
+                className='colImg'
+                src={value.img && value.img.src}
+                alt={value.img && value.img.alt}
+                listid={index}
+                onClick={() => {
+                  selectImage(index);
+                }}
+                key={index}
+              />
+            ) : null;
+          })}
       </div>
     );
   };
 
   // button bar object to render collection selectors
-  const ButtonBar = () => {
+  const ButtonBar = ({ categories }) => {
     return (
       <div className={buttonBarClassName} ref={imageRef}>
-        <button
-          className={buttonClasses['all']}
-          onClick={() => {
-            changeCollection('all');
-          }}
-        >
-          all
-        </button>
-        <button
-          className={buttonClasses['portrait']}
-          onClick={() => {
-            changeCollection('portrait');
-          }}
-        >
-          portraits
-        </button>
-        <button
-          className={buttonClasses['text']}
-          onClick={() => {
-            changeCollection('text');
-          }}
-        >
-          text
-        </button>
-        <button
-          className={buttonClasses['journal']}
-          onClick={() => {
-            changeCollection('journal');
-          }}
-        >
-          journals
-        </button>
+        {categories &&
+          categories.map((category, index) => {
+            return (
+              <button
+                className={
+                  collection === category ? BOLD_CLASSNAME : BASE_CLASSNAME
+                }
+                onClick={() => {
+                  changeCollection(category);
+                }}
+                key={index}
+              >
+                {category}
+              </button>
+            );
+          })}
       </div>
     );
   };
@@ -143,13 +105,8 @@ const Gallery = () => {
 
   return (
     <div className='gallery'>
-      <ButtonBar />
-      <BigImage
-        isMobile={isMobile}
-        imageData={imageData}
-        images={images}
-        index={bigImgIndex}
-      />
+      <ButtonBar categories={content && content.categories} />
+      <BigImage isMobile={isMobile} imageData={imageData} index={bigImgIndex} />
       <div className='parent'>
         <ImageColumn modVal={0} />
         <ImageColumn modVal={1} />

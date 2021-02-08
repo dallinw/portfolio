@@ -1,33 +1,38 @@
-import React, { useState } from 'react';
-import './Image.css'
+import React, { useEffect, useState } from 'react';
+import './Image.css';
 
-const images = require.context('../assets/images/hi-res', true);
+const Image = ({ images }) => {
+  const [imageSrc, setImageSrc] = useState(null);
 
-const imageNames = ['home page - destroyer.png', 'home page - falling girls.png', 'home page - fight.png', 'home page - lawn.png', 'home page - the cow said.png', 'home page - toy.png',];
+  useEffect(() => {
+    function getDefaultImage() {
+      if (images) {
+        let values = Array.from(Object.values(images));
+        setImageSrc(values[Math.floor(Math.random() * values.length)]);
+      }
+    }
 
-const Image = () => {
-  const [imageSrc, setImageSrc] = useState(getDefaultImage());
-
-  function getDefaultImage() {
-    var imgName = imageNames[getRandomInt(imageNames.length)]
-    var image =  images(`./${imgName}`)
-    return image;
-  }
+    getDefaultImage();
+  }, [images]);
 
   function setImage() {
-    var imgName = imageNames[getRandomInt(imageNames.length)]
-    var image =  images(`./${imgName}`)
-    if(image !== imageSrc) setImageSrc(image);
+    if (!images) {
+      return null;
+    }
+    let values = Array.from(Object.values(images));
+    let image = values[Math.floor(Math.random() * values.length)];
+    if (image !== imageSrc) setImageSrc(image);
     else setImage();
   }
-  
+
   return (
-      <img onClick={()=>setImage()} className="img" src={imageSrc} alt=""></img>
-  )
-}
+    <img
+      onClick={() => setImage()}
+      className='img'
+      src={imageSrc && imageSrc.src}
+      alt=''
+    ></img>
+  );
+};
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-export default Image
+export default Image;
